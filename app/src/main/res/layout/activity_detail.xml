@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primer1"
+    tools:context=".DetailActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="12dp"
+
+
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_prov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:elevation="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="H,16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_prov_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="#namaProvinsi"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_prov" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="10dp"
+                android:text="Ibu Kota                  :"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_prov_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prov_name" />
+
+            <TextView
+                android:id="@+id/tv_prov_kota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="2dp"
+                android:text="#namaIbuKota"
+                app:layout_constraintStart_toEndOf="@+id/nama"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prov_name" />
+
+            <TextView
+                android:id="@+id/tahun"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Tahun Peresmian :"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/nama"
+                app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+
+            <TextView
+                android:id="@+id/tv_prov_tahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="2dp"
+                android:text="#tahun"
+                app:layout_constraintStart_toEndOf="@+id/tahun"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prov_kota" />
+
+            <TextView
+                android:id="@+id/populasi"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Populasi                 :"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tahun"
+                app:layout_constraintTop_toBottomOf="@+id/tahun" />
+
+            <TextView
+                android:id="@+id/tv_prov_populasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="2dp"
+                android:text="#populasi"
+                app:layout_constraintStart_toEndOf="@+id/populasi"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prov_tahun" />
+
+            <TextView
+                android:id="@+id/lWilayah"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Luas Wilayah         :"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/populasi"
+                app:layout_constraintTop_toBottomOf="@+id/populasi" />
+
+            <TextView
+                android:id="@+id/tv_prov_lWilayah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="2dp"
+                android:text="#luaswilayah"
+                app:layout_constraintStart_toEndOf="@+id/lWilayah"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prov_populasi" />
+
+            <TextView
+                android:id="@+id/lHutanz"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Luas Hutan            :"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/lWilayah"
+                app:layout_constraintTop_toBottomOf="@+id/lWilayah" />
+
+            <TextView
+                android:id="@+id/tv_prov_lHutan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="2dp"
+                android:text="#luashutan"
+                app:layout_constraintStart_toStartOf="@+id/tv_prov_lWilayah"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prov_lWilayah" />
+
+            <TextView
+                android:id="@+id/tv_prov_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Sumatera Utara adalah sebuah provinsi di Indonesia yang terletak di bagian utara Pulau Sumatra. Provinsi ini beribu kota di Kota Medan, dengan luas wilayah 72.981,23 km2. Sumatera Utara merupakan provinsi dengan jumlah penduduk terbesar keempat di Indonesia, setelah provinsi Jawa Barat, Jawa Timur, dan Jawa Tengah, dan terbanyak di Pulau Sumatera."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prov_lHutan" />
+
+            <ImageView
+                android:id="@+id/fav_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/vector_favorite_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_prov" />
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="36dp"
+                android:text="Share"
+                app:layout_constraintEnd_toEndOf="@+id/tv_prov_description"
+                app:layout_constraintTop_toBottomOf="@+id/tv_prov_description"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
