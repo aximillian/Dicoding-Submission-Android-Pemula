@@ -1,141 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primer3"
-    tools:context=".AboutActivity">
+    android:background="@color/primer3">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:src="@drawable/profile"
-        app:civ_border_width="4dp"
-        app:civ_border_color="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/header"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="16dp"
-        android:alpha="0.8"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
-        android:translationZ="8dp"
-        android:foreground="?android:attr/selectableItemBackground"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:animateLayoutChanges="true"
-        android:text="Developed by:"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/primer1"
-        app:layout_constraintEnd_toEndOf="@+id/circleImageView"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="@+id/circleImageView"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.8"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:translationZ="8dp"
+            android:foreground="?android:attr/selectableItemBackground" />
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bryan Maximillian"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/header"
-        app:layout_constraintStart_toStartOf="@+id/header"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        android:layout_marginTop="8dp"
-        android:clickable="true"
-        android:onClick="openInstagram"/>
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:animateLayoutChanges="true"
+            android:text="Developed by:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primer1"
+            app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="@+id/circleImageView"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="danielbryanmaximillian@gmail.com"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/name"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        android:layout_marginTop="4dp"
-        android:clickable="true"
-        android:onClick="openLinkedIn"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bryan Maximillian"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/header"
+            app:layout_constraintStart_toStartOf="@+id/header"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:onClick="openInstagram"/>
 
-    <TextView
-        android:id="@+id/other"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp"
-        android:clickable="true"
-        android:onClick="openGitHub"
-        android:text="Other :"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="danielbryanmaximillian@gmail.com"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:onClick="openLinkedIn"/>
 
-    <ImageView
-        android:id="@+id/instagram"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/vector_instagram"
-        app:layout_constraintTop_toTopOf="@+id/other"
-        app:layout_constraintStart_toEndOf="@+id/other"
-        android:layout_marginStart="8dp"/>
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="openGitHub"
+            android:text="Other :"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
 
-    <ImageView
-        android:id="@+id/linkedin"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/vector_linkedin"
-        app:layout_constraintTop_toTopOf="@+id/other"
-        app:layout_constraintStart_toEndOf="@+id/instagram"
-        android:layout_marginStart="8dp"/>
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/vector_instagram"
+            app:layout_constraintTop_toTopOf="@+id/other"
+            app:layout_constraintStart_toEndOf="@+id/other"
+            android:layout_marginStart="8dp"/>
 
-    <ImageView
-        android:id="@+id/github"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:src="@drawable/vector_github"
-        app:layout_constraintStart_toEndOf="@+id/linkedin"
-        app:layout_constraintTop_toTopOf="@+id/other" />
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/vector_linkedin"
+            app:layout_constraintTop_toTopOf="@+id/other"
+            app:layout_constraintStart_toEndOf="@+id/instagram"
+            android:layout_marginStart="8dp"/>
 
-    <TextView
-        android:id="@+id/alasan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="Encouragement"
-        android:textColor="@color/primer1"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/other" />
+        <ImageView
+            android:id="@+id/github"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/vector_github"
+            app:layout_constraintStart_toEndOf="@+id/linkedin"
+            app:layout_constraintTop_toTopOf="@+id/other" />
 
-    <TextView
-        android:id="@+id/isi"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="4dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:text="Indonesia, as the largest archipelagic country in the world, has extraordinary natural, cultural and historical wealth. To promote and educate the public about this diversity, we present the IDN application. We are determined to introduce the richness of the archipelago to the world, promoting domestic tourism, and strengthening national unity and integrity. Join our journey to elevate Indonesia's name through this extraordinary IDN application."
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alasan" />
+        <TextView
+            android:id="@+id/alasan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Encouragement"
+            android:textColor="@color/primer1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/isi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Indonesia, sebagai negara kepulauan terbesar di dunia, memiliki kekayaan alam, budaya, dan sejarah yang luar biasa. Untuk mempromosikan dan mendidik masyarakat tentang keragaman ini, kami menyajikan aplikasi IDN. Kami bertekad untuk memperkenalkan kekayaan kepulauan ini kepada dunia, mempromosikan pariwisata domestik, dan memperkuat persatuan dan kesatuan nasional. Bergabunglah dalam perjalanan kami untuk meningkatkan nama Indonesia melalui aplikasi IDN yang luar biasa ini."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alasan" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

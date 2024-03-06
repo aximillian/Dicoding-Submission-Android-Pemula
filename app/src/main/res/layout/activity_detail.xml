@@ -7,7 +7,6 @@
     android:background="@color/primer1"
     tools:context=".DetailActivity">
 
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,14 +14,13 @@
         android:layout_marginRight="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginBottom="12dp"
-
-
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
 
             <ImageView
                 android:id="@+id/img_prov"
